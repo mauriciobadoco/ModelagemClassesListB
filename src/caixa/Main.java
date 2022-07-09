@@ -8,10 +8,11 @@ public class Main {
         Caixa caixa = new Caixa(1000,0,0);
 
 
-        caixa.lancamentos();
+        System.out.println("quantos lançamentos");
+        int lanc = input.nextInt();
 
 
-        for (int i =0;i <= caixa.lancamentos(); i++){
+        for (int i =0;i <= lanc; i++){
             System.out.println("Deseja qual operação? \n Crédito = digite 1. \n Débito = digite 2");
             int tipo = input.nextInt();
             switch (tipo){
